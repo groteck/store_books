@@ -1,5 +1,9 @@
 <h1>Listing books</h1>
-
+<%= form_for @search, :url => books_path, :html => {:method => :get} do |f| %>
+  <%= f.label :title_contains %>
+  <%= f.text_field :title_contains %><br />
+  <%= f.submit %>
+<% end %>
 <table>
   <tr>
     <th>Title</th>

@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 #upload files
 gem "paperclip", "~> 2.4"
+#search books
+gem "meta_search"
 
 # Gems used only for assets and not required
 # in production environments by default.
